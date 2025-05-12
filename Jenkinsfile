@@ -5,6 +5,7 @@ pipeline{
         stage('build'){
             steps{
                 script{
+                    sh 'git config remote.origin.url https://github.com/Alaaibrahim2/jenkins-project-.git'
                     sh 'docker build -t java-app .'
                 }
             }
